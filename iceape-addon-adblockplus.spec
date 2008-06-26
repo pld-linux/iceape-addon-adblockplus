@@ -3,7 +3,7 @@ Summary:	Extension for blocking unwanted ads, banners etc.
 Summary(pl.UTF-8):	Rozszerzenie do blokowania niechcianych reklam, bannerów itp.
 Name:		iceape-addon-adblockplus
 Version:	0.7.5.5
-Release:	1
+Release:	2
 Epoch:		1
 License:	unknown
 Group:		X11/Applications/Networking
@@ -15,6 +15,7 @@ BuildRequires:	unzip
 BuildRequires:	zip
 Requires(post,postun):	iceape >= 1.1
 Requires:	iceape >= 1.1
+Obsoletes:	seamonkey-addon-adblockplus
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
