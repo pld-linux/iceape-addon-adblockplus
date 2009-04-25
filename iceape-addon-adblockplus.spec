@@ -2,13 +2,13 @@
 Summary:	Extension for blocking unwanted ads, banners etc.
 Summary(pl.UTF-8):	Rozszerzenie do blokowania niechcianych reklam, bannerów itp.
 Name:		iceape-addon-adblockplus
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 Epoch:		1
 License:	unknown
 Group:		X11/Applications/Networking
 Source0:	http://releases.mozilla.org/pub/mozilla.org/addons/1865/%{realname}-%{version}-fx+sm+tb.xpi
-# Source0-md5:	b66a9e91f98fa3a2a0cb04117fa82715
+# Source0-md5:	745fdb3dae1e67750a92854fd677afc4
 Source1:	adblockplus-installed-chrome.txt
 URL:		http://adblockplus.org/
 BuildRequires:	unzip
