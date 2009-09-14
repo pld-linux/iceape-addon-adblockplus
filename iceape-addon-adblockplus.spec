@@ -2,13 +2,13 @@
 Summary:	Extension for blocking unwanted ads, banners etc.
 Summary(pl.UTF-8):	Rozszerzenie do blokowania niechcianych reklam, bannerów itp.
 Name:		iceape-addon-adblockplus
-Version:	1.0.2
-Release:	2
+Version:	1.1.1
+Release:	1
 Epoch:		1
 License:	unknown
 Group:		X11/Applications/Networking
 Source0:	http://releases.mozilla.org/pub/mozilla.org/addons/1865/%{realname}-%{version}-fx+sm+tb.xpi
-# Source0-md5:	745fdb3dae1e67750a92854fd677afc4
+# Source0-md5:	6ea1304754d1d4ebbc4558d9c73fec18
 URL:		http://adblockplus.org/
 BuildRequires:	unzip
 BuildRequires:	zip
@@ -45,15 +45,6 @@ install -d $RPM_BUILD_ROOT%{_libdir}/iceape
 
 unzip %{SOURCE0} -d $RPM_BUILD_ROOT
 
-# fix polish locale
-PWD=`pwd`
-cd $RPM_BUILD_ROOT/chrome/
-unzip adblockplus.jar locale/pl-PL/contents.rdf
-sed -i -e 's/locale:pl/locale:pl-PL/g' locale/pl-PL/contents.rdf
-zip -0 adblockplus.jar locale/pl-PL/contents.rdf
-rm -rf locale/pl-PL/contents.rdf
-cd $PWD
-
 #install %{SOURCE1} $RPM_BUILD_ROOT/chrome
 mv $RPM_BUILD_ROOT/chrome.manifest $RPM_BUILD_ROOT/chrome/adblockplus-installed-chrome.txt
 mv $RPM_BUILD_ROOT/defaults/preferences $RPM_BUILD_ROOT/defaults/pref
@@ -74,4 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/iceape/chrome/adblockplus.jar
 %{_datadir}/iceape/chrome/adblockplus-installed-chrome.txt
 %{_datadir}/iceape/defaults/pref/adblockplus.js
-%{_libdir}/iceape/components/nsAdblockPlus.*
+%{_libdir}/iceape/components/AdblockPlus.*
