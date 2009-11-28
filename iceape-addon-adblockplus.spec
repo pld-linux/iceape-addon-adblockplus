@@ -11,7 +11,6 @@ Source0:	http://releases.mozilla.org/pub/mozilla.org/addons/1865/%{realname}-%{v
 # Source0-md5:	6ea1304754d1d4ebbc4558d9c73fec18
 URL:		http://adblockplus.org/
 BuildRequires:	unzip
-BuildRequires:	zip
 Requires(post,postun):	iceape >= 2.0
 Requires:	iceape >= 2.0
 Obsoletes:	seamonkey-addon-adblockplus
