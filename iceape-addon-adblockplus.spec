@@ -3,7 +3,7 @@ Summary:	Extension for blocking unwanted ads, banners etc.
 Summary(pl.UTF-8):	Rozszerzenie do blokowania niechcianych reklam, bannerów itp.
 Name:		iceape-addon-adblockplus
 Version:	1.1.1
-Release:	1
+Release:	2
 Epoch:		1
 License:	unknown
 Group:		X11/Applications/Networking
